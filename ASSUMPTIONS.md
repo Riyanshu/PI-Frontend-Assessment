@@ -1,0 +1,2 @@
+1. Only the task details and its order is stored in the local storage, other details like the filter, search and sort are not stored.
+2. Even after any of the sort is selected (asc/desc), the user can change the order of the task list by drag and drop.
