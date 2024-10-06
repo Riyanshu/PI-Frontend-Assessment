@@ -1,4 +1,3 @@
-/* Header styles */
 .header {
     background-color: #f4f6f8;
     padding: 2rem;
@@ -10,128 +9,124 @@
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 20px;
-  }
+}
 
-  .title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .header h1 {
-    font-size: 2rem;
-    color: #333;
-    margin: 0;
-    font-weight: 600;
-  }
-  
-  /* Controls (search bar, filters, and add task button) */
-  .controls {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
 
-    &_end {
-        display: flex;
-        gap: 2rem;
-    }
-  }
-  
-  /* Search bar */
-  input[type="text"] {
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    width: 250px;
-    transition: border 0.3s ease;
-  
-    &:focus {
-      outline: none;
-      border-color: #0057ff;
-      box-shadow: 0 0 0 2px rgba(0, 87, 255, 0.2);
-    }
-  }
-  
-  /* Dropdowns (for filter and sort) */
-  .filter-sort {
-    display: flex;
-    font-size: 1rem;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .filter-sort label {
-    margin-bottom: 5px;
-    font-weight: 500;
-    color: #333;
-    text-wrap: nowrap;
-  }
-  
-  select {
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: #fff;
-    cursor: pointer;
-    transition: border 0.3s ease;
-  
-    &:focus {
-      outline: none;
-      border-color: #0057ff;
-      box-shadow: 0 0 0 2px rgba(0, 87, 255, 0.2);
-    }
-  }
-  
-  /* Add New Task button */
-  button {
-    background-color: #0057ff;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-wrap: nowrap;
-  
-    &:hover {
-      background-color: #0046d1;
-    }
-  
-    &:focus {
-      outline: none;
-      box-shadow: 0 0 0 2px rgba(0, 87, 255, 0.3);
-    }
-  
-    &:active {
-      background-color: #0038a8;
-    }
-  }
+.header h1 {
+	font-size: 2rem;
+	color: #333;
+	margin: 0;
+	font-weight: 600;
+}
 
-  @media (max-width: 700px) {
-    .header {
-      padding: 1rem;
-      
-      input[type="text"] {
-          width: 100%;
-      }
+.controls {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
-      select {
-          width: 15rem;
-      }
-    }
+	&_end {
+		display: flex;
+		gap: 2rem;
+	}
+}
 
-    .controls_end {
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 10px;
-    }
-  }
+input[type="text"] {
+	padding: 10px 15px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 1rem;
+	width: 250px;
+	transition: border 0.3s ease;
+
+	&:focus {
+		outline: none;
+		border-color: #0057ff;
+		box-shadow: 0 0 0 2px rgba(0, 87, 255, 0.2);
+	}
+}
+
+.filter-sort {
+	display: flex;
+	font-size: 1rem;
+	align-items: center;
+	gap: 1rem;
+}
+
+.filter-sort label {
+	margin-bottom: 5px;
+	font-weight: 500;
+	color: #333;
+	text-wrap: nowrap;
+}
+
+select {
+	padding: 10px 15px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 1rem;
+	background-color: #fff;
+	cursor: pointer;
+	transition: border 0.3s ease;
+
+	&:focus {
+		outline: none;
+		border-color: #0057ff;
+		box-shadow: 0 0 0 2px rgba(0, 87, 255, 0.2);
+	}
+}
+
+button {
+	background-color: #0057ff;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 1rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	text-wrap: nowrap;
+
+	&:hover {
+		background-color: #0046d1;
+	}
+
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 0 2px rgba(0, 87, 255, 0.3);
+	}
+
+	&:active {
+		background-color: #0038a8;
+	}
+}
+
+@media (max-width: 700px) {
+	.header {
+		padding: 1rem;
+
+		input[type="text"] {
+			width: 100%;
+		}
+
+		select {
+			width: 15rem;
+		}
+	}
+
+	.controls_end {
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 10px;
+	}
+}
   
